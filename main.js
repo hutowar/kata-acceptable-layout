@@ -23,3 +23,8 @@ scrollableEls.forEach((el) => {
     el.parentNode.classList.add("category-list__item--active");
   });
 });
+
+const readmoreEl = document.querySelector('.about__read-more');
+readmoreEl.addEventListener('click', function (e) {
+  document.querySelector('.about__text').classList.toggle("about__paragraph--open");
+});
