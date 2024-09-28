@@ -121,7 +121,7 @@ a {
   position: absolute;
   right: 0;
   top: 0;
-  z-index: 3;
+  /* z-index: 3; */
 }
 .nav-links {
   display: flex;
@@ -262,8 +262,9 @@ a {
   font-size: 16px;
   transition: left .2s ease-out
 }
-.menu--open {
+.menu.menu--open {
   left: 0;
+  /* z-index: 4; */
 }
 .menu__top {
 }
@@ -483,5 +484,11 @@ a {
   }
   .about__text {
     max-height: 90px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .menu{
+    left: -380px;
+    width: 100vw;
   }
 }
