@@ -28,3 +28,12 @@ const readmoreEl = document.querySelector('.about__read-more');
 readmoreEl.addEventListener('click', function (e) {
   document.querySelector('.about__text').classList.toggle("about__paragraph--open");
 });
+//BURGER MENU TOGGLE
+const burgerMenuBtns = document.querySelectorAll('.burger-menu');
+burgerMenuBtns.forEach(burgerMenuBtn => {
+  burgerMenuBtn.addEventListener('click', function (e) {
+    burgerMenuBtns.forEach(e => e.classList.toggle("burger-menu--active"))
+    // burgerMenuBtn.classList.toggle("burger-menu--active");
+    document.querySelector('.menu').classList.toggle("menu--open");
+  });
+});
