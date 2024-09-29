@@ -162,6 +162,7 @@ a {
   font-size: 28px;
   font-weight: 700;
   margin-bottom: 8px;
+  z-index: -1;
 }
 .about__title::before {
   content: "";
