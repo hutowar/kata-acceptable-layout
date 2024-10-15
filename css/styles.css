@@ -404,6 +404,7 @@ button {
 }
 /* COMPANYS */
 .main {
+overflow: hidden;
 }
 .companys {
 }
@@ -968,7 +969,7 @@ th {
   }
   .footer{
     flex-direction: column;
-    row-gap: 16px;
+    row-gap : 16px;
   }
   .footer__item{
     text-align: center !important;
